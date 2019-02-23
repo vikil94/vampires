@@ -26,7 +26,7 @@ class Vampire:
             this_vamp = Vampire.coven[num]
             if not this_vamp.drank_blood_today or not this_vamp.in_coffin:
                 Vampire.coven.remove(this_vamp)
-            return Vampire.coven
+                return Vampire.coven
 # sunset, which sets drank_blood_today and in_coffin to false for the entire
 # coven as they go out in search of blood
     @classmethod
